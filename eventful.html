@@ -1,0 +1,40 @@
+
+<html>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+    <script src="assets/javascript/eventful.js"></script>
+    <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+
+
+<body>
+
+
+
+    <label class="col-form-label" for="location"><b>Location</b></label>
+    <input type="text"  class="form-control" id="location"  placeholder="Location" >    
+    <label class="col-form-label" for="type"><b>Type</b></label>
+    <input type="text"  class="form-control" id="type"  placeholder="Type" >
+    <input type="button" onclick="search_events()" value="Search " /> <br>
+
+    <table class="table">
+    <thead>
+    <tr>
+    <th scope="col">city_name</th>  
+    <th scope="col">venue_address</th>          
+    <th scope="col">venue_name</th>
+    <th scope="col">title </th>
+    <th scope="col">image</th>
+    </tr>
+    </thead>
+    <tbody class="info">      
+    </tbody>
+    </table>
+
+    </body>
+
+    </html>
+    
+
+
+
