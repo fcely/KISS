@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zomato</title>
-
-    <!-- CSS Link -->
-
-    <!-- Zomato Widget -->
-    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KISS Homepage</title>
+<!-- Link to Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link to Fonts -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril_Fatface">
+<!-- Link to my CSS --> 
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <div class="widget_wrap" style="width:520px;height:504px;display:inline-block;">
-        <iframe src="https://www.zomato.com/widgets/res_search_widget.php?city_id=302&theme=red&widgetType=large&sort=popularity" style="position:relative;width:100%;height:100%;" border="0" frameborder="0"></iframe>
-    </div>
-    
+	<!-- Jumbotron -->
+	<div class="jumbotron mb-0">
+		<h1 class="display-4 text-center"><strong>K.I.S.S.-The Date Night Generator</strong></h1>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Navbar -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Spotify</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Yelp</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Amazon</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Absolut</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Eventful</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Fandango</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+				<button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+	<!-- Main Section -->
+	<main class="container-fluid">
+		<section class="row">
+			<!-- Steps card -->
+			<div class="card w-25" id="cardOne">
+				<img class="card-img-top" src="assets/images/dateNight.jpg" alt="card image cap">
+				<div class="card-body">
+					<h5 class="card-title text-center">Here's How It Works</h5>
+					<ol class="list-group">
+						<li class="list-group-item"><strong>Step One:</strong> Click on the Spotify Link and get your playlist.</li>
+						<li class="list-group-item"><strong>Step Two:</strong> Click on the Yelp link and find a restaurant.</li>
+						<li class="list-group-item"><strong>Step Three:</strong> Click on the Amazon link and order gifts.</li>
+						<li class="list-group-item"><strong>Step Four:</strong> Click on the Absolut link and select your drinks.</li>
+						<li class="list-group-item"><strong>Step Five:</strong> Click on the Eventful link and choose an event to attend.</li>
+						<br>Or...
+						<li class="list-group-item"><strong>Step Six:</strong> Click on the Fandango link and choose a movie to watch.</li>
+					</ol>
+				</div>
+			</div>
+			<!-- KISS card -->
+			<div class="card w-50 h-25" id="cardTwo">
+				<div class="card-body">
+					<h5 class"card-title">Having trouble thinking of ideas for a date with that special someone?</h5>
+					<p class="card-text text-center"><strong>Keep It Simple Stupid, and let our app do the work.</strong></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<div class="card" id="footer">
+		<div class="card-footer text-center">
+			&copy; Copyright 2018 K.I.S.S.
+		</div>
+	</div>
 
-<!-- Link to jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<!-- Link to CSS -->
-
-<!-- Link to my js file -->
-<script src="assets/javascript/app.js"></script>
-</body>
-</html>
+<script src="assets/javascript/app.js"></script>		
