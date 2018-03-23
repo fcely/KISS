@@ -20,11 +20,17 @@
     
     
     <script >
-    
-window.open("https://accounts.spotify.com/authorize/?client_id=4bfc50b0cfd8462c80ed1240b4bdd6a7&response_type=token&redirect_uri=https://fcely.github.io/KISS/index.html&scope=user-read-private%20user-read-email&state=34fFs29kd09")
+
 
 
 var current_url=window.location.href
+
+
+if (current_url=== "https://fcely.github.io/KISS/index.html"){
+window.open("https://accounts.spotify.com/authorize/?client_id=4bfc50b0cfd8462c80ed1240b4bdd6a7&response_type=token&redirect_uri=https://fcely.github.io/KISS/index.html&scope=user-read-private%20user-read-email&state=34fFs29kd09")
+}
+
+current_url=window.location.href
 
 
 
