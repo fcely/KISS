@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.jumbotron {
+    background-image: url("http://compuson.com/fondo3.jpg");
+    height: 200px;
+    padding-top: 10px;
+    border-radius: 0px;
+}
+
+.display-4 {
+    color: #fff;
+    padding-top: 20px;
+    font-family: Abril_Fatface;
+}
+
+.navbar {
+    border: none;
+    margin-top: 30px;
+}
+
+.container-fluid {
+    background-image: url("https://wallpaperscraft.com/image/san_-_diego_night_california_usa_50536_1920x1200.jpg");
+    width: 100%;
+    border-radius: 0px;
+}
+
+#cardOne {
+    border-radius: 0px;
+}
+
+.card-img-top {
+    padding: 10px;
+    border: 0px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list-group li {
+    border: 0;
+    margin-bottom: -15px;
+}
+
+#cardTwo {
+    left: 175px;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+
+#footer {
+    height: 60px;
+    background-image: url("http://compuson.com/fondo3.jpg");
+    color: #fff;
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
