@@ -1,0 +1,45 @@
+
+<html>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <body>
+    
+    
+    <label  for="artist"><b>Artist</b></label>
+    <input type="text" class=" col-4 mr-2 ml-2" id="artist"  placeholder="Artist" >                         
+    <button type="submit" class="btn btn-primary  " id="submit">Submit</button>
+    </div>
+    
+    <div class="mt-4" id="spotify_player">
+    
+        
+    </div>
+    
+    </body>
+    
+    
+    <script >
+    
+    
+    $(document).on('click','#submit', function(){
+    
+    var id=''
+    var artist=$('#artist').val()
+    
+    if (artist==''){artist='planetshakers'}
+    
+    $.ajax({
+        url: "https://api.spotify.com/v1/search?q="+artist+"&type=artist",
+        beforeSend: function(xhr) {
+             xhr.setRequestHeader("Authorization", "Bearer BQCGOkmoiM3BNxQOXyPkUKHAHnKftZF77j-d1V9okNrtb7Yxv1ewwfCK7oVXG9_wPaRzxviRH8gOZ6zBXE0FsIUiDMsKk5YBfkTPaM-RaAb5hzniikhu-8bnVB2XngrE_r07XxNYUEpXeS_lNlGe2qVuoUNaOwgyAQ")
+        }, success: function(data){
+            id=data.artists.items[0].id
+            $('#spotify_player').html("<iframe id='spotify_player' src='https://open.spotify.com/embed/artist/"+id+"' width='300' height='380' frameborder='0' allowtransparency='true' allow='encrypted-media'></iframe>")
+        }
+    })
+    
+    })
+    
+    </script>
+    
