@@ -1,4 +1,17 @@
+var config = {
+    apiKey: "AIzaSyDYKJVKrHI4Vb9oexmK8oMEPmRClVLPap4",
+    authDomain: "kiss-d14dd.firebaseapp.com",
+    databaseURL: "https://kiss-d14dd.firebaseio.com",
+    projectId: "kiss-d14dd",
+    storageBucket: "kiss-d14dd.appspot.com",
+    messagingSenderId: "439034791894"
+  };
+  firebase.initializeApp(config);
 
+
+
+
+  var database = firebase.database();
 
 
 $(document).on('click','#submit', function(){
@@ -23,6 +36,7 @@ if (drink=''){drink='vodka'}
    
    function onSuccess(data) {
        object=data
+       database.ref('Drinks').set({absolut: object})
        console.log("API request success");
        console.log(data);
 

@@ -1,5 +1,46 @@
 
 
+ // Initialize Firebase
+ //var config = {
+ //  apiKey: "AIzaSyDYKJVKrHI4Vb9oexmK8oMEPmRClVLPap4",
+ //  authDomain: "kiss-d14dd.firebaseapp.com",
+ //  databaseURL: "https://kiss-d14dd.firebaseio.com",
+ //  projectId: "kiss-d14dd",
+ //  storageBucket: "kiss-d14dd.appspot.com",
+ //  messagingSenderId: "439034791894"
+ //};
+ //firebase.initializeApp(config);
+
+
+//var database= firebase.database();
+
+
+
+  // Initialize Firebase
+  //var config = {
+  //  apiKey: "AIzaSyAf0lRp4Nr3e3PJ3sRqiVrtmMvvvZlAbBc",
+  //  authDomain: "myfirstproject-7366f.firebaseapp.com",
+  //  databaseURL: "https://myfirstproject-7366f.firebaseio.com",
+  //  projectId: "myfirstproject-7366f",
+  //  storageBucket: "myfirstproject-7366f.appspot.com",
+  //  messagingSenderId: "661248309956"
+  //};
+  //firebase.initializeApp(config);
+
+
+  var config = {
+    apiKey: "AIzaSyDYKJVKrHI4Vb9oexmK8oMEPmRClVLPap4",
+    authDomain: "kiss-d14dd.firebaseapp.com",
+    databaseURL: "https://kiss-d14dd.firebaseio.com",
+    projectId: "kiss-d14dd",
+    storageBucket: "kiss-d14dd.appspot.com",
+    messagingSenderId: "439034791894"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+
 function search_events()
 
 {
@@ -23,7 +64,10 @@ var date_range= date_from+"00-"+date_to+"00"
    EVDB.API.call("/events/search", oArgs, function(oData) {
     console.log(oData)
 object=oData
-    alert(oData.events.event.length)
+database.ref('Events').set({eventful: object})
+//firebase.database().ref('eventful').update(object)
+
+
    
     var city_name
     var venue_address

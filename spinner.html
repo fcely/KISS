@@ -1,0 +1,132 @@
+
+<html>
+
+<head>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>    
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+
+
+<body>
+    
+        <button type="button" id="run" class="btn btn-primary">run</button>
+        <h2 id="Events"> X  </h2>
+        <h2 id="Drinks"> X  </h2>
+        <h2 id="Movies"> X  </h2>
+        <h2 id="Eat"> Eat  </h2>
+ </body>
+
+
+</html>
+
+
+<script>
+    
+
+var config = {
+    apiKey: "AIzaSyDYKJVKrHI4Vb9oexmK8oMEPmRClVLPap4",
+    authDomain: "kiss-d14dd.firebaseapp.com",
+    databaseURL: "https://kiss-d14dd.firebaseio.com",
+    projectId: "kiss-d14dd",
+    storageBucket: "kiss-d14dd.appspot.com",
+    messagingSenderId: "439034791894"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+
+
+var events_l=0
+var drinks_l=0
+var movies_l=0
+
+Events={}
+database.ref('Events').on("value",function(snapshot){
+
+Events=snapshot.val()
+events_l=Events.eventful.events.event.length
+})
+
+
+Drinks={}
+database.ref('Drinks').on("value",function(snapshot){
+
+Drinks=snapshot.val()
+drinks_l=Drinks.absolut.result.length
+})
+
+
+
+Movies={}
+database.ref('Movies').on("value",function(snapshot){
+
+Movies=snapshot.val()
+movies_l=Movies.movieNowPlaying.length
+})
+
+
+
+
+
+
+
+$('#run').on('click',function(){
+
+
+var intervalId=0
+
+var number= Math.min(events_l, drinks_l,movies_l)
+
+
+var i=0
+var rand=Math.floor((Math.random() * number) + 0)
+
+
+run();
+
+
+    function run() {
+      clearInterval(intervalId);
+      intervalId = setInterval(decrement, 100);
+      }
+
+    function decrement() {
+          
+
+        if (number>0){
+          $("#Drinks").text(Drinks.absolut.result[i].name)
+          $("#Events").text(Events.eventful.events.event[i].title)
+          $("#Movies").text(Movies.movieNowPlaying[i])
+            console.log(number)
+            console.log(i)
+            
+        }
+            
+            
+            if (number <= 0) {
+        $("#Drinks").text('Drink:' + Drinks.absolut.result[rand].name)
+        $("#Events").text('Go to:' +Events.eventful.events.event[rand].title)
+        $("#Movies").text('Watch:' +Movies.movieNowPlaying[rand])
+        $("#Eat").text('Eat:' +Movies.movieNowPlaying[rand])
+                clearInterval(intervalId)
+                return 0;}
+                number--
+          i++
+            }
+
+    
+   
+
+
+})
+
+
+
+
+
+</script>
