@@ -44,6 +44,7 @@ var config = {
 var events_l=0
 var drinks_l=0
 var movies_l=0
+var restaurants_l=0
 
 Events={}
 database.ref('Events').on("value",function(snapshot){
@@ -69,6 +70,12 @@ Movies=snapshot.val()
 movies_l=Movies.movieNowPlaying.length
 })
 
+Restaurant={}
+database.ref('Restaurant').on("value",function(snapshot){
+
+Restaurant=snapshot.val()
+//restaurants=Movies.movieNowPlaying.length
+})
 
 
 
@@ -102,6 +109,9 @@ run();
           $("#Drinks").text(Drinks.absolut.result[i].name)
           $("#Events").text(Events.eventful.events.event[i].title)
           $("#Movies").text(Movies.movieNowPlaying[i])
+          $("#Eat").text('Eat:' + Restaurant.businesses[i].name)
+            
+          
             console.log(number)
             console.log(i)
             
@@ -112,7 +122,7 @@ run();
         $("#Drinks").text('Drink:' + Drinks.absolut.result[rand].name)
         $("#Events").text('Go to:' +Events.eventful.events.event[rand].title)
         $("#Movies").text('Watch:' +Movies.movieNowPlaying[rand])
-        $("#Eat").text('Eat:' +Movies.movieNowPlaying[rand])
+        $("#Eat").text('Eat:' + Restaurant.businesses[rand].name)
                 clearInterval(intervalId)
                 return 0;}
                 number--
@@ -126,7 +136,7 @@ run();
 })
 
 
-
+DrinkArray=Drinks.absolut.result[rand]
 
 
 </script>
