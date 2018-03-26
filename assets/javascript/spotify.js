@@ -1,5 +1,5 @@
 var string=location.href
-
+// This avoids the page to loop...
 
 if (string=== "https://fcely.github.io/KISS/spotify.html"){
 
