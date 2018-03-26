@@ -1,79 +1,22 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Spotify Page</title>
-<!-- Link to Bootstrap -->   
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- Link to Our CSS -->
-<link rel="stylesheet" href="assets/css/styleSpotify.css">
-</head>
-<body>
-    	<!-- Jumbotron -->
-	<div class="jumbotron mb-0">
-        <h1 class="display-4 text-center"><strong>And I Say Darling, You Look Wonderful Tonight...</strong></h1>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="spotify.html">Spotify</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="yelp.html">Yelp!</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=kiss099-20&keywords=Benchmark Bouquets&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=8181ef19f92117ce2fd8eb4f832f5791" target="_blank">Amazon</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="absolut.html">Absolut</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="eventful.html">Eventful</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="fandango.html">Fandango</a>
-                    </li>
-                </ul>
-                <!--<form class="form-inline my-2 my-lg-0">-->
-                <!--<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">-->
-                <!--<button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>-->
-                <!--</form>-->
-            </div>
-        </nav>
+
+<html>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/spotify.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <body>
+    
+    
+    <label  for="artist"><b>Artist</b></label>
+    <input type="text" class=" col-4 mr-2 ml-2" id="artist"  placeholder="Artist" >                         
+    <button type="submit" class="btn btn-primary  " id="submit">Submit</button>
     </div>
-    <!-- Main Section -->
-    <main class="container-fluid">
-        <section class="row">
-            <div class="col-6"></div>
-            <form class="col text-white">
-                <label for="artist" id="artistLabel"><b>Artist</b></label>
-                <input type="text" class="col-8 mr-2 ml-2" id="artist" placeholder="Marvin Gaye">                         
-                <button type="submit" class="btn btn-secondary" id="submit">Submit</button>
-                <div class="mt-4" id="spotify_player"></div>
-            </form>
-        </section>
-    </main>
-    <!-- Footer -->
-    <div class="card" id="footer">
-        <div class="card-footer text-center">
-            &copy; Copyright 2018 K.I.S.S.
-        </div>
+    
+    <div class="mt-4" id="spotify_player">
+    
+        
     </div>
-<!-- Link to jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Link to Firebase -->
-<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-<!-- Link to Our js file. -->
-<script src="assets/javascript/spotify.js"></script>
-</body>
-</html>
+    
+    </body>
+    
+    
