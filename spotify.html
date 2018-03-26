@@ -3,21 +3,174 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/spotify.js"></script>
-    <link rel="stylesheet" href="assets/css/styleSpotify.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <body>
     
-    
-    <label  for="artist"><b>Artist</b></label>
-    <input type="text" class=" col-4 mr-2 ml-2" id="artist"  placeholder="Artist" >                         
-    <button type="submit" class="btn btn-primary  " id="submit">Submit</button>
+
+        <div class="video-background">
+            <div class="video-foreground">
+              <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+
+        <div class="jumbotron mb-0">
+        <h1 class="display-4 text-center"><strong>And I Say Darling, You Look Wonderful Tonight...</strong></h1>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="spotify.html">Spotify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="yelp.html">Yelp!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=kiss099-20&keywords=Benchmark Bouquets&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=8181ef19f92117ce2fd8eb4f832f5791" target="_blank">Amazon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="absolut.html">Absolut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventful.html">Eventful</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fandango.html">Fandango</a>
+                    </li>
+                </ul>
+            
+    <input type="text" class=" mr-2 ml-2" id="artist"  placeholder="Artist" >                         
+    <button type="submit" class="  btn   " id="submit">Submit</button>
+</div>
+            
+
+            
     </div>
-    
-    <div class="mt-4" id="spotify_player">
-    
-        
+        </nav>
     </div>
+
+
+   
     
-    </body>
+<div class="container-fluid">
+    <div class="mt-4" id="spotify_player">  
+    </div>
+</div>
+    
+<div class="card" id="footer">
+    <div class="card-footer text-center">
+        &copy; Copyright 2018 K.I.S.S.
+    </div>
+</div>
+
+
+
+</body>
     
     
+
+
+    <style>
+
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+
+
+.jumbotron {
+   position:fixed;
+   width:100%;
+    background-image: url("http://compuson.com/fondo3.jpg");
+    height: 200px;
+    padding-top: 10px;
+    border-radius: 0px;
+}
+
+.display-4 {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar {
+    border: none;
+    margin-top: 30px;
+}
+
+
+
+#footer {
+position:fixed;
+width: 100%;
+    top: 90%;
+    height: 10%;
+    background-image: url("http://compuson.com/fondo3.jpg");
+    color: #fff;
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* { box-sizing: border-box; }
+    .video-background {
+      background: #000;
+      position: fixed;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: -99;
+    }
+    .video-foreground,
+    .video-background iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    #vidtop-content {
+        top: 0;
+        color: #fff;
+    }
+    .vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+    .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+    .vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+    @media (min-aspect-ratio: 16/9) {
+      .video-foreground { height: 300%; top: -100%; }
+    }
+    @media (max-aspect-ratio: 16/9) {
+      .video-foreground { width: 300%; left: -100%; }
+    }
+    @media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+    }
+    @media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
+    }
+
+
+    </style>
