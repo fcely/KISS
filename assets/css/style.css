@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.jumbotron {
+    background-image: url("http://compuson.com/fondo3.jpg");
+    height: 200px;
+    padding-top: 10px;
+    border-radius: 0px;
+}
+
+.display-4 {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar {
+    border: none;
+    margin-top: 30px;
+}
+
+.container-fluid {
+    background-image: url("https://wallpaperscraft.com/image/san_-_diego_night_california_usa_50536_1920x1200.jpg");
+    width: 100%;
+    height: 950px;
+    border-radius: 0px;
+    position: relative;
+}
+
+#cardOne {
+    border-radius: 0px;
+    margin-top: 55px;
+    background-color: darkgrey;
+    margin-right: 0px;
+}
+
+.card-img-top {
+    padding: 10px;
+    border: 0px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list-group li {
+    border: 0;
+    margin-bottom: -15px;
+}
+
+#cardTwo {
+    margin-top: 10px;
+    border-radius: 0px;
+    position: absolute;
+    left: 507px;
+    height: 90px;
+}
+
+#cardThree {
+    margin-top: 110px;
+    border-radius: 0px;
+    position: absolute;
+    left: 357px;
+    height: 165px;
+    width: 975px;
+}
+
+.wheel {
+    color: #fff;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    height: 34.4px;
+    overflow: hidden;
+    float: left;
+}
+
+.stuff {
+    width: 560px;
+}
+
+wheel .fa {
+	display: block;
+	font-size: 4em;
+	margin-bottom: 0.5em;
+  }
+
+.btn-light {
+    margin-top: 15px;
+}
+
+#footer {
+    height: 60px;
+    background-image: url("http://compuson.com/fondo3.jpg");
+    color: #fff;
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

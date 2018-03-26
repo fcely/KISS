@@ -1,6 +1,4 @@
-
-
- // Initialize Firebase
+// Initialize Firebase
  //var config = {
  //  apiKey: "AIzaSyDYKJVKrHI4Vb9oexmK8oMEPmRClVLPap4",
  //  authDomain: "kiss-d14dd.firebaseapp.com",
@@ -96,4 +94,3 @@ for (i=0;i<oData.events.event.length;i++){
 });
 
 }
-

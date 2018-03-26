@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>KISS Homepage</title>
+<!-- Link to Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- Link to Fonts -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Abril_Fatface">
+<!-- Link to my CSS --> 
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- Jumbotron -->
+	<div class="jumbotron mb-0">
+		<h1 class="display-4 text-center"><strong>K.I.S.S.-The Date Night Generator</strong></h1>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="spotify.html">Spotify</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="yelp.html">Yelp!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=kiss099-20&keywords=Benchmark Bouquets&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=8181ef19f92117ce2fd8eb4f832f5791" target="_blank">Amazon</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="absolut.html">Absolut</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="eventful.html">Eventful</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="fandango.html">Fandango</a>
+					</li>
+				</ul>
+				<!--<form class="form-inline my-2 my-lg-0">-->
+				<!--<input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">-->
+				<!--<button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>-->
+				<!--</form>-->
+			</div>
+		</nav>
+	</div>
+	<!-- Main Section -->
+	<main class="container-fluid">
+		<section class="row">
+			<!-- Steps card -->
+			<div class="card w-25" id="cardOne">
+				<img class="card-img-top" src="http://www.quinlanartscenter.org/uploads/9/9/3/4/9934132/datenightlogo-photoshop_orig.jpg" alt="card image cap">
+				<div class="card-body">
+					<h5 class="card-title text-center">Here's How It Works</h5>
+					<ol class="list-group">
+						<li class="list-group-item"><strong>Step One:</strong> Hit the random generator or search for your date manually by follwoing the directions below.</li>
+						<li class="list-group-item"><strong>Step Two:</strong> Click on the Spotify Link and get your playlist.</li>
+						<li class="list-group-item"><strong>Step Three:</strong> Click on the Yelp link and find a restaurant.</li>
+						<li class="list-group-item"><strong>Step Four:</strong> Click on the Amazon link and order gifts.</li>
+						<li class="list-group-item"><strong>Step Five:</strong> Click on the Absolut link and select your drinks.</li>
+						<li class="list-group-item"><strong>Step Six:</strong> Click on the Eventful link and choose from a variety of events to attend. Or...</li>
+						<li class="list-group-item"><strong>Step Seven:</strong> Click on the Fandango link and choose a movie to watch.</li>
+					</ol>
+				</div>
+			</div>
+			<!-- KISS card -->
+			<div class="card w-50 bg-dark text-white" id="cardTwo">
+				<div class="card-body">
+					<h5 class"card-title">Having trouble thinking of ideas for a date with that special someone?</h5>
+					<p class="card-text text-center"><strong>Keep It Simple Stupid, and let our app do the work.</strong></p>
+				</div>
+			</div>
+			<!-- Spinner card -->
+			<div class="card bg-dark" id="cardThree">
+				<div class="card-body">
+					<div class="input" id="wheels">
+						<div class="wheel clearfix film">Your Movie</div>
+						<div class="wheel clearfix chow">Your Meal</div>
+						<div class="wheel clearfix drink">Your Drink</div>
+						<div class="wheel clearfix event">Your Event</div>
+					<!-- add more wheels if you want; just remember to update the width in the CSS -->
+					</div>
+					<p class="text-center"> <button id="spin" type="button" class="btn btn-light">Spin to get your Random Date Generated!</button> </p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<div class="card" id="footer">
+		<div class="card-footer text-center">
+			&copy; Copyright 2018 K.I.S.S.
+		</div>
+	</div>
+<!-- Link to jQuery -->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Link to Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<!-- Link to Our js file -->
+<script src="assets/javascript/movie.js"></script>		
+</body>
+</html>

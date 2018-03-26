@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.jumbotron {
+    background-image: url("http://compuson.com/fondo3.jpg");
+    height: 200px;
+    padding-top: 10px;
+    border-radius: 0px;
+}
+
+.display-4 {
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar {
+    border: none;
+    margin-top: 30px;
+}
+
+.container-fluid {
+    background-image: url("http://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
+    width: 100%;
+    border-radius: 0px;
+    height: 850px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+#artistLabel {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#artist {
+    margin-top: 20px;
+}
+
+#submit {
+    margin-top: 5px;
+}
+
+#footer {
+    height: 60px;
+    background-image: url("http://compuson.com/fondo3.jpg");
+    color: #fff;
+    border-radius: 0px;
+    border: 0px;
+}
+
+
+
