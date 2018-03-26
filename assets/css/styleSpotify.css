@@ -8,7 +8,7 @@ html {
 }
 
 .jumbotron {
-    background-image: url("http://compuson.com/fondo3.jpg");
+    background-image: url("https://compuson.com/fondo3.jpg");
     height: 200px;
     padding-top: 10px;
     border-radius: 0px;
@@ -25,7 +25,7 @@ html {
 }
 
 .container-fluid {
-    background-image: url("http://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
+    background-image: url("https://i.ebayimg.com/images/g/5OcAAOSwTuJYo4Jm/s-l1600.jpg");
     width: 100%;
     border-radius: 0px;
     height: 850px;
@@ -50,7 +50,7 @@ form {
 
 #footer {
     height: 60px;
-    background-image: url("http://compuson.com/fondo3.jpg");
+    background-image: url("https://compuson.com/fondo3.jpg");
     color: #fff;
     border-radius: 0px;
     border: 0px;
