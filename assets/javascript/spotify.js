@@ -1,11 +1,11 @@
 var string=location.href
 
 
-//if (string=== "https://fcely.github.io/KISS/spotify.html"){
+if (string=== "https://fcely.github.io/KISS/spotify.html"){
 
 document.location.href="https://accounts.spotify.com/authorize/?client_id=4bfc50b0cfd8462c80ed1240b4bdd6a7&response_type=token&redirect_uri=https://fcely.github.io/KISS/spotify.html&scope=user-read-private%20user-read-email&state=34fFs29kd09"
 
-//}
+}
 
 string=window.location.href
  
