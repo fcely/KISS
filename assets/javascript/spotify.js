@@ -1,5 +1,5 @@
 var string=location.href
-
+// This avoids the page to loop...
 
 if (string=== "https://fcely.github.io/KISS/spotify.html"){
 
@@ -17,7 +17,8 @@ token = string.substring(start,end)
 
 
 if (token==='') {
-    alert('Spotify Log in Failed')
+ document.location.href="https://accounts.spotify.com/authorize/?client_id=4bfc50b0cfd8462c80ed1240b4bdd6a7&response_type=token&redirect_uri=https://fcely.github.io/KISS/spotify.html&scope=user-read-private%20user-read-email&state=34fFs29kd09"
+
 }
 
 
