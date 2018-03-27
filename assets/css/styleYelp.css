@@ -28,6 +28,7 @@ html {
     background-image: url("https://i.ytimg.com/vi/E0etB2T_KDc/maxresdefault.jpg");
     height: 1000px;
     width: 100%;
+
 }
 
 #cardOne {
@@ -36,7 +37,7 @@ html {
     margin-left: -20px;
 }
 
-#test {
+#myForm {
     width: 800px;
     border-radius: 0;
     padding-left: 25px;
@@ -49,15 +50,19 @@ html {
     width: 750px;
 }
 
-.label {
+.form, .form-group {
     padding-top: 10px;
-    color: #fff;
+    background-color: #fff;
     font-weight: bold;
 }
 
 .submitButton {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+select {
+    width: 100px;
 }
 
 #footer {
